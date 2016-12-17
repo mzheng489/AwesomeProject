@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import {Block, Navbar} from './sharedModule/Block.js';
 
 class PicFrame extends Component {
   render() {
@@ -22,22 +23,12 @@ class PicFrame extends Component {
   }
 }
 
-class Block extends Component {
-  render() {
-    return (
-      <Text style={styles.welcome}>
-        this is a {this.props.textToBeFilled}
-      </Text>
-    );
-  }
-}
-
 class AwesomeProject extends Component {
   render() {
     return (
-      <View>
-        <PicFrame text = "michael"/>
-        <Block textToBeFilled = "Block is big"/>
+      <View style={styles.container}>
+        <Navbar/>
+        <Block style= {styles.welcome} message = "meesage is from michael"/>
       </View>
 
     );
@@ -52,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize:40,
     textAlign: 'center',
     margin: 10,
   },
