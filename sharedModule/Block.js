@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import{
   AppRegistry,
+  StyleSheet,
   Text,
   View,
-} from 'react-native'
+} from 'react-native';
 
 export class Block extends Component {
   render() {
@@ -19,18 +20,16 @@ export class Navbar extends Component {
   render() {
     return (
       <View style={navbarStyle.container}>
-        <Text>
+        <Text style={navbarStyle.item}>
           HOME
         </Text>
-
-        <Text>
+        <Text style={navbarStyle.item}>
           CATEGORY
         </Text>
-
-        <Text>
+        <Text style={navbarStyle.item}>
           PRODUCT
         </Text>
-        <Text>
+        <Text style={navbarStyle.item}>
           ABOUT ME
         </Text>
       </View>
@@ -41,6 +40,13 @@ export class Navbar extends Component {
 const navbarStyle = StyleSheet.create({
   // fill in the css for navbar here
   container : {
+    height : 50,
+    flexDirection : 'row',
+    alignItems: 'flex-start',
+    backgroundColor: 'powderblue',
+  },
 
+  item : {
+    margin : 10,
   }
 });

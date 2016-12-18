@@ -26,7 +26,7 @@ class PicFrame extends Component {
 class AwesomeProject extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <Navbar/>
         <Block style= {styles.welcome} message = "meesage is from michael"/>
       </View>
