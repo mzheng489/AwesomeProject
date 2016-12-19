@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import {Block, Navbar} from './sharedModule/Block.js';
+import {MainInput} from './sharedModule/MainInput.js';
 
 class PicFrame extends Component {
   render() {
@@ -29,6 +30,7 @@ class AwesomeProject extends Component {
       <View>
         <Navbar/>
         <Block style= {styles.welcome} message = "meesage is from michael"/>
+        <MainInput />
       </View>
 
     );
